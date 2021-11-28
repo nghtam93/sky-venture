@@ -1,5 +1,19 @@
 $(document).ready(function(){
 
+    /*----Get Header Height ---*/
+    function get_header_height() {
+        var header_sticky=$("header.-fix").outerHeight()
+        $('body').css("--header-height",header_sticky+'px')
+    }
+
+    setTimeout(function(){
+        get_header_height()
+    }, 500);
+
+    $( window ).resize(function() {
+      get_header_height()
+    });
+
     /*----Languages---*/
     $('.languages .languages-item').click(function() {
         $(this).next().toggleClass('dropdown-languages');
@@ -107,125 +121,18 @@ $(document).ready(function(){
         return o.preventDefault(),$("html, body").animate({scrollTop:0},duration),!1
     });
 
-    // Loadmore
-    $('.js-btn-loadmore').on("click",function(e) {
-        var loadmore_content = $(this).closest('.js-loadmore__wrap').find('.js-content-loadmore')
-        if(loadmore_content.hasClass('active')){
-            loadmore_content.removeClass('active')
-        }else{
-            loadmore_content.addClass('active')
-        }
-        $(this).remove()
-    })
-
-
     //check home
-    if($('body').hasClass( "home" )){
-
-        $('.js-intro-slider-for').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          fade: false,
-          asNavFor: '.js-intro-slider-nav'
-        });
-        $('.js-intro-slider-nav').slick({
-          autoplay: true,
-          autoplaySpeed: 5000,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          asNavFor: '.js-intro-slider-for',
-          fade: true,
-          arrows: false,
-          dots: true,
-        });
-
-        $('.home-mentor__slider').slick({
+    if($('body').hasClass( "category" )){
+        $('.news__slider').slick({
             slidesToShow: 1,
-            arrows: false,
-            dots: true,
-            variableWidth: true,
-            responsive: [
-                {
-                  breakpoint: 490,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    variableWidth: false
-                  }
-                }
-            ]
-        });
-
-        $('.home-fund-slider').slick({
-            slidesToShow: 7,
-            slidesToScroll: 2,
-            arrows: false,
+            slidesToScroll: 1,
+            arrows: true,
             dots: true,
             responsive: [
                 {
-                  breakpoint: 1299,
+                  breakpoint: 991,
                   settings: {
-                    slidesToShow: 6,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 1199,
-                  settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 768,
-                  settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 575,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                  }
-                }
-            ]
-        });
-
-        $('.home-orbit-slider').slick({
-            slidesToShow: 7,
-            slidesToScroll: 2,
-            arrows: false,
-            dots: true,
-            responsive: [
-                {
-                  breakpoint: 1299,
-                  settings: {
-                    slidesToShow: 6,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 1199,
-                  settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 768,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 575,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    arrows: false,
                   }
                 }
             ]

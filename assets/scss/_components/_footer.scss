@@ -1,8 +1,9 @@
 .footer{
+	position: relative;
 	padding: 120px 0 65px;
 	background-image: url(../img/footer-bg.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position: center bottom;
 	&__item{
 		margin-bottom: 230px;
@@ -62,10 +63,76 @@
 		letter-spacing: 0.03em;
 		color: #BAC4C8;
     }
-    @media (max-width: 1199px){
+    @media (max-width: 1599px){
+    	padding: 100px 0 30px;
+    	&__item {
+		    margin-bottom: 150px;
+		}
+    	&__nav{
+    		.el__menu {
+			    font-size: 16px;
+			    line-height: 24px;
+			    li {
+				    margin-bottom: 10px;
+				}
+			}
 
+    	}
+    	&__text {
+		    font-size: 22px;
+		}
+		.copyright {
+		    font-size: 16px;
+		    line-height: 22px;
+		}
+    }
+    @media (max-width: 1199px){
+		&__item {
+		    margin-bottom: 100px;
+		}
+    	&__logo{
+    		img {
+			    max-height: 150px;
+			}
+    	}
+    }
+    @media (max-width: 991px){
+    	&__text {
+		    font-size: 18px;
+		}
     }
     @media (max-width: 767px){
-
+		background-size: cover;
+		&__item{
+			margin-bottom: 30px;
+		}
+		&__nav{
+			margin-left: -8px;
+			margin-bottom: 0;
+		}
+		&__text{
+			position: relative;
+			&::after {
+				content: '';
+				display: block;
+				width: 70px;
+				height: 2px;
+				background: #41FF98;
+				margin-top: 30px;
+			}
+		}
+		.copyright {
+		    border-top: 1px solid #B7C6FF;
+    		padding-top: 24px;
+		}
+    }
+    @media (max-width: 575px){
+    	padding: 20px 0 30px;
+    	&__logo {
+		    margin-top: 0;
+		    img {
+			    max-height: 100px;
+			}
+		}
     }
 }
