@@ -100,17 +100,17 @@ $(document).ready(function(){
     //-------------------------------------------------
     $('.nav__mobile--close').click(function(e){
         $('.nav__mobile').removeClass('active')
-        $('body').removeClass('modal-open')
+        $('body').removeClass('menumb-open')
     });
     $('.menu-mb__btn').click(function(e){
         e.preventDefault()
-        if($('body').hasClass('modal-open')){
+        if($('body').hasClass('menumb-open')){
             $('.menu-mb__btn').removeClass('active')
             $('.nav__mobile').removeClass('active')
-            $('body').removeClass('modal-open')
+            $('body').removeClass('menumb-open')
         }else{
             $('.menu-mb__btn').addClass('active')
-            $('body').addClass('modal-open')
+            $('body').addClass('menumb-open')
             $('.nav__mobile').addClass('active')
         }
     });

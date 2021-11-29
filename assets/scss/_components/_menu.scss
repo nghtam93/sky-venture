@@ -127,7 +127,7 @@ $font-color: #fff;
 }
 
 /*Menu custom*/
-.modal-open{overflow:hidden;}
+.menumb-open{overflow:hidden;background-color: #0B144F;}
 
 .nav__mobile{
     display:block;
@@ -146,7 +146,6 @@ $font-color: #fff;
     background-color: #0B144F;
     background-image:url(../img/menu-mb-bg.png);
     background-size:cover;
-    box-shadow: 7px 10px 10px #162166;
     &--close {
         position: relative;
         top: 2px;
