@@ -36,10 +36,12 @@ body {
   position: relative;
   --header-height:80px;
 }
-.home body{
+body.home {
     background: #0B144F;
 }
-
+body.single{
+    background: #fff;
+}
 a, a:hover {
     color: #4D4D4D;
     text-decoration: none;
@@ -324,6 +326,7 @@ br{
     .gx-lgx-8{
         --bs-gutter-x: 8rem;
     }
+
 }
 @media (min-width: 1400px){
     .col-lgx-5{
@@ -333,12 +336,17 @@ br{
     .offset-lgx-2{
             margin-left: 16.66666667%;
     }
-
+    .container-lg-1200{
+        max-width: 1224px;
+    }
 }
 
 @media (min-width: 1600px){
     .container-xl, .container-lg, .container-md, .container-sm, .container {
         max-width: 1515px;
+    }
+     .container-lg-1200{
+        max-width: 1224px;
     }
 }
 
