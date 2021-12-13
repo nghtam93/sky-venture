@@ -1,0 +1,455 @@
+********************************************************************************
+DUPLICATOR PRO PACKAGE-LOG: 2021-12-06 07:18:11
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	3.8.7
+WORDPRESS:	5.8.2
+PHP INFO:	7.3.9 | SAPI: apache2handler
+SERVER:		Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.9 
+ARCHITECTURE:	64-bit 
+CLIENT KICKOFF: off 
+PHP TIME LIMIT: [7200] not allowed 
+PHP MAX MEMORY: 4294967296 (900M default) 
+RUN TYPE:	Manual
+MEMORY STACK:	16MB
+ARCHIVE ENGINE: DupArchive
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP + CHUNKING (chunk size - 500 rows)
+
+TABLES: total: 49 | filtered:0 | create:49
+SCHEMA SIZE: [4734976]
+SQL CREATED: 20211206_skyventure_42e20f666591a54d1760_20211206071740_database.sql
+SQL FILE SIZE: 1.51MB
+SQL FILE TIME: 2021-12-06 07:18:37
+SQL RUNTIME: 25.633 sec.
+MEMORY STACK: 14MB
+
+********************************************************************************
+ARCHIVE Type=DUP Mode=DupArchive
+********************************************************************************
+ARCHIVE DIR:  D:/xampp/htdocs/wp/sky-venture
+ARCHIVE FILE: 20211206_skyventure_42e20f666591a54d1760_20211206071740_archive.daf
+FILTERS: *OFF*
+DIRS:  not set
+EXTS:  not set
+FILES:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	126.31MB
+STATS:	Dirs 1,965 | Files 10,540 | Total 12,505
+DB INFO IN CREATE ARCHIV CONFIG
+DUP_PRO_DatabaseInfo Object
+(
+    [buildMode] => PHPCHUNKING
+    [charSetList] => Array
+        (
+            [0] => utf8mb4
+            [1] => latin1
+        )
+
+    [collationList] => Array
+        (
+            [0] => utf8mb4_unicode_ci
+            [1] => latin1_swedish_ci
+        )
+
+    [isTablesUpperCase] => 0
+    [isNameUpperCase] => 0
+    [name] => tam_sky-venture
+    [tablesBaseCount] => 49
+    [tablesFinalCount] => 49
+    [tablesRowCount] => 7797
+    [tablesSizeOnDisk] => 4734976
+    [tablesList] => Array
+        (
+            [wpz_actionscheduler_actions] => stdClass Object
+                (
+                    [rows] => 1
+                    [size] => 131072
+                )
+
+            [wpz_actionscheduler_claims] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 32768
+                )
+
+            [wpz_actionscheduler_groups] => stdClass Object
+                (
+                    [rows] => 1
+                    [size] => 32768
+                )
+
+            [wpz_actionscheduler_logs] => stdClass Object
+                (
+                    [rows] => 3
+                    [size] => 49152
+                )
+
+            [wpz_commentmeta] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 49152
+                )
+
+            [wpz_comments] => stdClass Object
+                (
+                    [rows] => 1
+                    [size] => 98304
+                )
+
+            [wpz_duplicator_pro_entities] => stdClass Object
+                (
+                    [rows] => 5
+                    [size] => 32768
+                )
+
+            [wpz_duplicator_pro_packages] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 32768
+                )
+
+            [wpz_icl_content_status] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 32768
+                )
+
+            [wpz_icl_core_status] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 32768
+                )
+
+            [wpz_icl_flags] => stdClass Object
+                (
+                    [rows] => 65
+                    [size] => 32768
+                )
+
+            [wpz_icl_languages] => stdClass Object
+                (
+                    [rows] => 65
+                    [size] => 49152
+                )
+
+            [wpz_icl_languages_translations] => stdClass Object
+                (
+                    [rows] => 4,225
+                    [size] => 393216
+                )
+
+            [wpz_icl_locale_map] => stdClass Object
+                (
+                    [rows] => 2
+                    [size] => 16384
+                )
+
+            [wpz_icl_message_status] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 49152
+                )
+
+            [wpz_icl_mo_files_domains] => stdClass Object
+                (
+                    [rows] => 36
+                    [size] => 32768
+                )
+
+            [wpz_icl_node] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 16384
+                )
+
+            [wpz_icl_reminders] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 16384
+                )
+
+            [wpz_icl_string_batches] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 16384
+                )
+
+            [wpz_icl_string_packages] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 16384
+                )
+
+            [wpz_icl_string_pages] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 49152
+                )
+
+            [wpz_icl_string_positions] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 32768
+                )
+
+            [wpz_icl_string_status] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 32768
+                )
+
+            [wpz_icl_string_translations] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 32768
+                )
+
+            [wpz_icl_string_urls] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 32768
+                )
+
+            [wpz_icl_strings] => stdClass Object
+                (
+                    [rows] => 60
+                    [size] => 114688
+                )
+
+            [wpz_icl_translate] => stdClass Object
+                (
+                    [rows] => 270
+                    [size] => 114688
+                )
+
+            [wpz_icl_translate_job] => stdClass Object
+                (
+                    [rows] => 5
+                    [size] => 32768
+                )
+
+            [wpz_icl_translation_batches] => stdClass Object
+                (
+                    [rows] => 1
+                    [size] => 16384
+                )
+
+            [wpz_icl_translation_downloads] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 16384
+                )
+
+            [wpz_icl_translation_status] => stdClass Object
+                (
+                    [rows] => 39
+                    [size] => 98304
+                )
+
+            [wpz_icl_translations] => stdClass Object
+                (
+                    [rows] => 207
+                    [size] => 81920
+                )
+
+            [wpz_links] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 32768
+                )
+
+            [wpz_newsletter] => stdClass Object
+                (
+                    [rows] => 2
+                    [size] => 49152
+                )
+
+            [wpz_newsletter_emails] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 16384
+                )
+
+            [wpz_newsletter_sent] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 49152
+                )
+
+            [wpz_newsletter_stats] => stdClass Object
+                (
+                    [rows] => 0
+                    [size] => 49152
+                )
+
+            [wpz_newsletter_user_logs] => stdClass Object
+                (
+                    [rows] => 1
+                    [size] => 16384
+                )
+
+            [wpz_options] => stdClass Object
+                (
+                    [rows] => 333
+                    [size] => 1392640
+                )
+
+            [wpz_postmeta] => stdClass Object
+                (
+                    [rows] => 1,770
+                    [size] => 425984
+                )
+
+            [wpz_posts] => stdClass Object
+                (
+                    [rows] => 257
+                    [size] => 540672
+                )
+
+            [wpz_rank_math_internal_links] => stdClass Object
+                (
+                    [rows] => 22
+                    [size] => 32768
+                )
+
+            [wpz_rank_math_internal_meta] => stdClass Object
+                (
+                    [rows] => 30
+                    [size] => 16384
+                )
+
+            [wpz_term_relationships] => stdClass Object
+                (
+                    [rows] => 280
+                    [size] => 32768
+                )
+
+            [wpz_term_taxonomy] => stdClass Object
+                (
+                    [rows] => 28
+                    [size] => 49152
+                )
+
+            [wpz_termmeta] => stdClass Object
+                (
+                    [rows] => 16
+                    [size] => 49152
+                )
+
+            [wpz_terms] => stdClass Object
+                (
+                    [rows] => 28
+                    [size] => 49152
+                )
+
+            [wpz_usermeta] => stdClass Object
+                (
+                    [rows] => 43
+                    [size] => 49152
+                )
+
+            [wpz_users] => stdClass Object
+                (
+                    [rows] => 1
+                    [size] => 65536
+                )
+
+        )
+
+    [varLowerCaseTables] => 1
+    [version] => 10.1.22
+    [versionComment] => mariadb.org binary distribution
+    [tableWiseRowCounts] => Array
+        (
+            [wpz_actionscheduler_actions] => 1
+            [wpz_actionscheduler_claims] => 0
+            [wpz_actionscheduler_groups] => 1
+            [wpz_actionscheduler_logs] => 3
+            [wpz_commentmeta] => 0
+            [wpz_comments] => 1
+            [wpz_duplicator_pro_entities] => 5
+            [wpz_duplicator_pro_packages] => 1
+            [wpz_icl_content_status] => 0
+            [wpz_icl_core_status] => 0
+            [wpz_icl_flags] => 65
+            [wpz_icl_languages] => 65
+            [wpz_icl_languages_translations] => 4225
+            [wpz_icl_locale_map] => 2
+            [wpz_icl_message_status] => 0
+            [wpz_icl_mo_files_domains] => 36
+            [wpz_icl_node] => 0
+            [wpz_icl_reminders] => 0
+            [wpz_icl_string_batches] => 0
+            [wpz_icl_string_packages] => 0
+            [wpz_icl_string_pages] => 0
+            [wpz_icl_string_positions] => 0
+            [wpz_icl_string_status] => 0
+            [wpz_icl_string_translations] => 0
+            [wpz_icl_string_urls] => 0
+            [wpz_icl_strings] => 60
+            [wpz_icl_translate] => 270
+            [wpz_icl_translate_job] => 5
+            [wpz_icl_translation_batches] => 1
+            [wpz_icl_translation_downloads] => 0
+            [wpz_icl_translation_status] => 39
+            [wpz_icl_translations] => 207
+            [wpz_links] => 0
+            [wpz_newsletter] => 2
+            [wpz_newsletter_emails] => 0
+            [wpz_newsletter_sent] => 0
+            [wpz_newsletter_stats] => 0
+            [wpz_newsletter_user_logs] => 1
+            [wpz_options] => 343
+            [wpz_postmeta] => 1770
+            [wpz_posts] => 259
+            [wpz_rank_math_internal_links] => 22
+            [wpz_rank_math_internal_meta] => 30
+            [wpz_term_relationships] => 280
+            [wpz_term_taxonomy] => 28
+            [wpz_termmeta] => 16
+            [wpz_terms] => 28
+            [wpz_usermeta] => 43
+            [wpz_users] => 1
+        )
+
+    [intFieldsStruct:DUP_PRO_DatabaseInfo:private] => Array
+        (
+        )
+
+    [indexProcessedSchemaSize:DUP_PRO_DatabaseInfo:private] => Array
+        (
+        )
+
+)
+
+COMPRESSED SIZE: 46.42MB
+ARCHIVE RUNTIME: 224.354 sec.
+MEMORY STACK: 18MB
+CREATE WARNINGS: No warnings.
+VALIDATION WARNINGS: No warnings.
+
+********************************************************************************
+STORAGE:
+********************************************************************************
+LOCAL: Default, D:/xampp/htdocs/wp/sky-venture/wp-content/backups-dup-pro
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 1.51MB
+INSTALLER FILE: 87.78KB
+ARCHIVE FILE: 46.42MB 
+EXPECTED FILE/DIRECTORY COUNT: 12,505
+ACTUAL FILE/DIRECTORY COUNT: 12,505
+
+********************************************************************************
+RECORD ID:[2]
+TOTAL PROCESS RUNTIME: 227.082 sec.
+PEAK PHP MEMORY USED: 12MB
+DONE PROCESSING => 20211206_skyventure 2021-12-06 07:21:58
+

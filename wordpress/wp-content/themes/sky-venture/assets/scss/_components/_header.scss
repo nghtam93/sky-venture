@@ -1,0 +1,114 @@
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width:100%;
+	z-index: 10;
+	transition: all .5s;
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: rgba(255, 255, 255, .1);
+	}
+	.logo{
+		img{
+			max-width: 97px;
+			transition: all .5s;
+		}
+	}
+	&.is-active{
+		background: rgba(15, 1, 69, 0.9);
+		animation:stuckMoveDown .6s;
+
+		.logo img {
+		    max-width: 90px;
+		}
+		.el__menu>li>a {
+		    padding: 34px 4px;
+		}
+	}
+	@media (min-width: 1600px){
+		--bs-gutter-x: 3rem;
+	}
+	@media (max-width: 1399px){
+
+	}
+	@media (max-width: 1299px){
+		&.is-active {
+		}
+	}
+	@media (max-width: 1199px){
+
+	}
+	@media (max-width: 991px){
+		padding: 2px 0;
+
+		.languages {
+			width: 50px;
+			margin-left: auto;
+			text-align: right;
+		}
+		.logo {
+		    flex-grow: 1;
+		    text-align: center;
+		    img {
+			    max-width: 60px!important;
+			}
+		}
+	}
+
+	@media (max-width: 575px){
+
+	}
+}
+/**/
+.languages{
+    position:relative;
+    display:inline-block;
+    margin-left: 20px;
+    img, span{display:inline-block;vertical-align:middle;}
+    img{width:40px;height:24px;}
+    span{margin-left:7px;}
+
+    .languages-item{
+        position:relative;
+        left:0px;top:0px;
+        cursor:pointer;transition:0.3s;
+        &:hover{background-color:#ededed;}
+    }
+    ul{
+        position:absolute;top:105%;left:0;right:0;background-color:#ffffff;
+        width: 40px;
+        transform-origin:top;transform:rotateX(90deg);-webkit-transform:rotateX(90deg);
+        opacity:0;display:block;-webkit-transition:all 0.5s;transition:all 0.5s;
+    }
+    ul.dropdown-languages{visibility:visible;transform:rotateY(0);-webkit-transform:rotateY(0);opacity:1;}
+    ul li{display:block;
+
+        padding:3px 3px;color:#1A1C25;cursor:pointer;transition:0.3s;}
+    ul li + li{border-top:1px solid #cccccc;}
+    ul li:hover, ul li.active{background-color:#feec8f;color:#ffffff;}
+}
+@keyframes stuckMoveDown{
+    0%{transform:translateY(-100%)}
+    100%{transform:translateY(0)}
+}
+
+/* Fix WP*/
+.admin-bar{
+	@media (min-width: 992px) {
+	    .header.-fix, .nav__mobile{
+		    top: 32px;
+		}
+	}
+	@media (max-width: 767px) {
+	    #wpadminbar{
+	        display: none;
+	    }
+	}
+}
